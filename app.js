@@ -18,14 +18,18 @@ let imgsHigh = [
   src = "photos/12.jpg", 
 ]
 
+current.style.display = "none";
+
 imgs.forEach(img => img.addEventListener("click", imgClick));
   function imgClick(e) { 
+    current.style.display = "block";
     current.src = e.target.src.replace('thumbnails/', '');
-       
-
+   
  }
  
 
+
+//  current.src = e.target.src.replace('thumbnails/', '');
   //  works
   // current.src = e.target.src;   
   //.includes("thumbnails/")
