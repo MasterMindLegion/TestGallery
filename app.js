@@ -21,28 +21,14 @@ let imgsHigh = [
 
 imgs.forEach(img => img.addEventListener("click", imgClick));
   function imgClick(e) { 
-    if(current.src .includes("thumbnails/") === true) {
-        for(let i = 1; i <= current.src.length; i += 1) { 
-          i = [ 
-            [document.getElementById("1").src=  "photos/01.jpg"],
-            [document.getElementById("2").src = "photos/02.jpg"],
-            [document.getElementById("3").src = "photos/03.jpg"],
-            [document.getElementById("4").src = "photos/04.jpg"],
-            [document.getElementById("5").src = "photos/05.jpg"],
-            [document.getElementById("6").src = "photos/06.jpg"],
-            [document.getElementById("7").src = "photos/07.jpg"],
-            [document.getElementById("8").src = "photos/08.jpg"],
-            [document.getElementById("9").src = "photos/09.jpg"],
-            [document.getElementById("10").src = "photos/10.jpg"],
-            [document.getElementById("11").src = "photos/11.jpg"],
-            [document.getElementById("12").src = "photos/12.jpg"]
-        ]
-        
+    current.src = e.target.src.replace('thumbnails/', '');
+       
+    if(current.src .includes("thumbnails/") === true) {          
 }
  }
   //  works
    current.src = e.target.src;   
-}
+// }
  console.log(current);
   //  works
   // current.src = e.target.src;   
