@@ -18,26 +18,20 @@ let imgsHigh = [
   src = "photos/12.jpg", 
 ]
 
-
 imgs.forEach(img => img.addEventListener("click", imgClick));
   function imgClick(e) { 
     current.src = e.target.src.replace('thumbnails/', '');
        
-    if(current.src .includes("thumbnails/") === true) {          
-}
+
  }
-  //  works
-   current.src = e.target.src;   
-// }
- console.log(current);
+ 
+
   //  works
   // current.src = e.target.src;   
   //.includes("thumbnails/")
 
   
  
-
-console.log(current.src)
 
 
 
